@@ -40,12 +40,12 @@ public class Main
             int beginning = i;
             System.out.println(i);
             int isBeginning = i == 0;
-            boolean spaceBefore = false;
-            if(isBeginning || spaceBefore) {
-                if(true) {
-                  
-                }
-            }
+            System.out.println(word.substring(i - 1, i));
+            //if(isBeginning || spaceBefore) {
+              //  if(true) {
+
+             //   }
+            //}
         }
     }
     return containCount;
