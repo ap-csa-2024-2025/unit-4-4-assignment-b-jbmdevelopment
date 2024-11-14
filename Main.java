@@ -33,13 +33,22 @@ public class Main
 
   public static int countProperContains(String word, String target)
   {
+    int containCount = 0;
     for(int i = 0; i < word.length() - target.length() - 1; i++) {
         String str = word.substring(i, i + target.length());
         if(str.equals(target)) {
-            
+            int beginning = i;
+            System.out.println(i);
+            int isBeginning = i == 0;
+            boolean spaceBefore = false;
+            if(isBeginning || spaceBefore) {
+                if(true) {
+                  
+                }
+            }
         }
     }
-    return 0;
+    return containCount;
   }
 
   public static String deleteSub(String word, String target)
