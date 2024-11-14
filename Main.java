@@ -12,7 +12,11 @@ public class Main
     String target = input.nextLine();
     int counter = countSub(sentence, target);
     System.out.println(target + " appears " + counter + " times");
-
+    System.out.println("Enter a world");
+    String wrd = input.nextLine();
+    System.out.println("Enter a target");
+    String trgt = input.nextLine();
+    int countProper = countProperContains(wrd, trgt);
   }
 
   public static int countSub(String word, String target)
@@ -29,6 +33,12 @@ public class Main
 
   public static int countProperContains(String word, String target)
   {
+    for(int i = 0; i < word.length() - target.length() - 1; i++) {
+        String str = word.substring(i, i + target.length());
+        if(str.equals(target)) {
+            
+        }
+    }
     return 0;
   }
 
