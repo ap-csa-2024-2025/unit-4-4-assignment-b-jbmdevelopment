@@ -39,7 +39,7 @@ public class Main
         if(str.equals(target)) {
             int beginning = i;
             System.out.println(i);
-            int isBeginning = i == 0;
+            boolean isBeginning = i == 0;
             System.out.println(word.substring(i - 1, i));
             //if(isBeginning || spaceBefore) {
               //  if(true) {
